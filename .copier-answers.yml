@@ -1,0 +1,13 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.3.5
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: dfgm2006@gmail.com
+author_name: voila-sepal-ui
+has_binder: false
+has_settings: false
+kind: frontend
+labextension_name: voila-sepal-ui
+project_short_description: A JupyterLab extension.
+python_name: voila_sepal_ui
+repository: https://github.com/dfguerrerom/voila-sepal-ui
+test: true

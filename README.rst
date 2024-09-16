@@ -6,38 +6,40 @@
 voila-sepal-ui
 ==============
 
-This is a fork of the voila-vuetify project original project. The purpose of this fork is to create a template for the sepal-ui project.
 
-Installation
-============
+Install
+=======
 
-.. code-block:: bash
+This Package was created using the `copier <https://github.com/jupyterlab/extension-template>`_ template.
 
-   git clone https://github.com/dfguerrerom/voila-sepal-ui.git
-   cd voila-sepal-ui
-   pip install .
+... code-block:: bash
 
-
-Usage
-=====
-
-To use the `sepal-ui` template, just pass `--template=sepal-ui-base` to the `voila` command line.
-
-.. code-block:: bash
-
-   voila app.ipynb --template=sepal-ui-base --show_tracebacks=True
+   conda create -n voila-sepalui-ext --override-channels --strict-channel-priority -c conda-forge -c nodefaults jupyterlab=4 nodejs=20 git copier=9 jinja2-time
 
 
-Alternatively, you can also set the template definition in the notebook metadata to use the `sepal-u-basei` template. Open the notebook as a text file and add the following metadata:
 
-.. code-block:: json
+   # To install the package in development mode
 
-   "voila" : {
-      "template" : "sepal-ui-base"
-   }
+   conda activate voila-sepalui-ext
+   pip install -ve .
 
-You can also set the title of the tool by adding the following metadata:
+   # To create symbolic links for the extension
 
-.. code-block:: json
+   jupyter labextension develop --overwrite .
 
-   "title" : "My geospatial-ui tool"
+   # To build the extension
+
+   jlpm run build
+
+   # To watch the extension for changes
+
+   jlpm run watch
+
+
+Install new dependencies
+
+... code-block:: bash
+
+   jlpm add @jupyterlab/apputils @jupyterlab/application
+
+
