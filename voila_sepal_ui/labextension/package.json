@@ -56,6 +56,8 @@
     "watch:labextension": "jupyter labextension watch ."
   },
   "dependencies": {
+    "@jupyter-widgets/base": "^6.0.10",
+    "@jupyter-widgets/jupyterlab-manager": "^5.0.13",
     "@jupyterlab/application": "^4.0.0"
   },
   "devDependencies": {
@@ -97,7 +99,7 @@
     "extension": true,
     "outputDir": "voila_sepal_ui/labextension",
     "_build": {
-      "load": "static/remoteEntry.a949422b2a92de95e513.js",
+      "load": "static/remoteEntry.b0646aa47ee10715f582.js",
       "extension": "./extension",
       "style": "./style"
     }

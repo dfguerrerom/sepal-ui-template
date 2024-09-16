@@ -699,6 +699,8 @@
               "import": false,
               "singleton": true
             },
+            "@jupyter-widgets/base": {},
+            "@jupyter-widgets/jupyterlab-manager": {},
             "voila-sepal-ui": {
               "version": "0.1.0",
               "singleton": true,

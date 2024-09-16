@@ -6,8 +6,13 @@ __pycache__/
 *$py.class
 *[Uu]ntitled*
 
+# I think I have to remove it when I distribute it
+labextension/
+
+
 # C extensions
 *.so
+.yarn/*
 
 # Distribution / packaging
 .Python
